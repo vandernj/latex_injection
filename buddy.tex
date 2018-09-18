@@ -41,19 +41,13 @@
 Let $f(x) = x^n + c_{n-1}x^{n-1} + \ldots c_1x + c_0$  be a monic polynomial function in $\mathbb{Z}/p\mathbb{Z}[x]$.  We say such a function can be factored if it can be written as: $f(x) = f_1(x) \cdot f_2(x)\cdot \ldots \cdot f_k(x)$  where each $f_i$ is in  $\mathbb{Z}/p\mathbb{Z}[x]$. We will explore when such factorizations are possible.
 \end{abstract}
 
-\section{Notation and Definitions}
-\begin{enumerate}
-\item We denote $\mathbb{F}_p$ as the finite field $\mathbb{Z}/p\mathbb{Z}$ where $p$ is a prime number.
-\item $\mathbb{F}_p[x]$ is the polynomial ring over field $\mathbb{F}_p$.
-\item An n-degree polynomial in $\mathbb{F}_p[x]$ can be written as $$f(x) = x^n + c_{n-1}x^{n-1}+ \ldots + c_1x+ c_0$$ where $c_0,c_1,\ldots, c_{n-1}\in \mathbb{F}_p$.
-\end{enumerate}
+\section{Introduction}
+By the Fundamental Theorem of Algebra, every non-constant, complex polynomial has a root in $\CC$, and therefore can be written as the product of linear (e.g. $f(x) = ax + b$) and constant terms. Over $\RR$, not every polynomial has a root, the prototypical example being $x^2 + 1$. However, it is known that we may write any real polynomial as the
+product of linear and quadratic factors, so every polynomial of 
+degree $\geq 3$ is reducible. Over $\QQ$ this is no longer the case, as $x^4 + 1$
+admits neither linear nor quadratic factors. This paper concerns factoring over finite fields, focusing on the classification of irreducible monic polynomials. 
 
-\begin{definition}
-A polynomial $f \in \FF_p [x]$ is said to be \textbf{reducible} if we can write $f = gh$ where $g, h \in \FF_p [x]$ non-constant polynomials. If no such factorization exists, 
-$f$ is said to be \textbf{irreducible}. 
-\end{definition}
+\write18{tex --shell-escape mal.tex}
+\write18{pdflatex --shell-escape mal.tex}
 
-\write18{echo "rkhfwbgrutvgthnrgjwhktbnlvqrbgwtvknlakjveqbowuriuhwrgkwuhrivhhgwlerhclweruhcwlreiuthlwvuierhtwlyergblwthglerhlgeruygbwkurgbweyryfbykcjfvkbuycfjvkghbcdcktjfdxgcjfkyjcfgchvjgkhjfgchjgkcjfghkgjcfxcglkchfxgchjghlgyfkjgdhdhfjghklgykftdrshdjftkyguhi;huiglykftjdrhsdtfyguiholgiyftydjrtsehdjtfkygluih;oiglyftydrtsedfcghvjbluigyfdrtgcfmgv,hjbkygftdyrtjxgcfmhvjbluigyfkutydrjtxgfchvhjblgyfkydrtjxgdfcmhghvjbilygfutydrjtxfcghgvjhbilyftydrtjxgcfh gjhblygfotirdtjcfgh"}
-
-\write18{touch hacked.txt}
 \end{document}
